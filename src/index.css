@@ -1,0 +1,49 @@
+/* Variables CSS para el sistema de temas (Ejercicio 5) */
+:root {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f4f6f9;
+  --bg-card: #ffffff;
+  --text-primary: #1a1a2e;
+  --text-secondary: #555555;
+  --accent: #4a6fa5;
+  --accent-hover: #3a5a8c;
+  --border: #dde2ec;
+  --shadow: rgba(0, 0, 0, 0.08);
+  --nav-bg: #1a1a2e;
+  --nav-text: #ffffff;
+  --input-bg: #ffffff;
+  --error: #e74c3c;
+  --success: #27ae60;
+}
+
+/* Tema oscuro aplicado en la raíz cuando el body tiene la clase dark */
+body.dark {
+  --bg-primary: #0d0d1a;
+  --bg-secondary: #16213e;
+  --bg-card: #1e2a45;
+  --text-primary: #e8eaf0;
+  --text-secondary: #a0aac0;
+  --accent: #6b93d6;
+  --accent-hover: #89aee0;
+  --border: #2e3f60;
+  --shadow: rgba(0, 0, 0, 0.4);
+  --nav-bg: #0d0d1a;
+  --nav-text: #e8eaf0;
+  --input-bg: #1e2a45;
+  --error: #ff6b6b;
+  --success: #4ece7c;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  min-height: 100vh;
+}

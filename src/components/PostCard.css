@@ -1,0 +1,82 @@
+.post-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.3rem 1.5rem;
+  position: relative;
+  box-shadow: 0 2px 8px var(--shadow);
+  transition: box-shadow 0.2s ease;
+}
+
+.post-card.destacado {
+  border-color: #f0a500;
+  box-shadow: 0 0 0 2px #f0a50066;
+}
+
+.post-badge {
+  position: absolute;
+  top: 0.7rem;
+  right: 0.8rem;
+  font-size: 0.75rem;
+  background-color: #f0a500;
+  color: #fff;
+  padding: 0.2rem 0.55rem;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.post-title {
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+  padding-right: 5rem;
+}
+
+.post-desc {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 0.7rem;
+}
+
+.post-date {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.post-actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.btn-action {
+  border: none;
+  padding: 0.35rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.82rem;
+  font-weight: 600;
+  transition: opacity 0.2s ease;
+}
+
+.btn-action:hover {
+  opacity: 0.8;
+}
+
+.btn-edit {
+  background-color: var(--accent);
+  color: #fff;
+}
+
+.btn-star {
+  background-color: #f0a500;
+  color: #fff;
+}
+
+.btn-delete {
+  background-color: var(--error);
+  color: #fff;
+}

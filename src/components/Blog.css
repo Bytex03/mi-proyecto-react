@@ -1,0 +1,100 @@
+.blog {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.blog-form {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.blog-form-title {
+  font-size: 1rem;
+  color: var(--accent);
+}
+
+.blog-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.blog-form-group label {
+  font-size: 0.87rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.blog-form-group input,
+.blog-form-group textarea {
+  padding: 0.6rem 0.8rem;
+  border: 1.5px solid var(--border);
+  border-radius: 8px;
+  background-color: var(--input-bg);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+  font-family: inherit;
+  resize: vertical;
+  transition: border-color 0.2s ease;
+}
+
+.blog-form-group input:focus,
+.blog-form-group textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.blog-form-actions {
+  display: flex;
+  gap: 0.7rem;
+}
+
+.btn-submit {
+  background-color: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.4rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.btn-submit:hover {
+  background-color: var(--accent-hover);
+}
+
+.btn-cancel {
+  background-color: transparent;
+  color: var(--text-secondary);
+  border: 1.5px solid var(--border);
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background-color 0.2s ease;
+}
+
+.btn-cancel:hover {
+  background-color: var(--border);
+}
+
+.blog-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.blog-empty {
+  text-align: center;
+  color: var(--text-secondary);
+  font-style: italic;
+  padding: 2rem;
+}
